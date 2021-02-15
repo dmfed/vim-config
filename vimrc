@@ -6,11 +6,20 @@ set mouse=a
 " Let's tell between filetypes 
 " and indent properly
 filetype plugin indent on
+syntax enable
 
-" Start custom commands with a ,
-" and set slightly bigger timeout
+" If we'd like to set a theme
+" set background=dark OR set background=light
+" colorscheme solarized
+
+" Start custom commands with a , (comma)
+" and set slightly longer timeout
 let mapleader = ","
 set timeoutlen=1500
+
+" Faster write and write'n'quite
+map <leader>w :w<cr>
+map <leader>wq :wq<cr>
 
 " Navigating tabs
 map <leader>tn :tabnew
@@ -23,7 +32,7 @@ map <leader>tr :tabp<cr>
 set showcmd
 
 " Don't show current mode 
-" (since we're using lightline)
+" (since we're using lightline plugin)
 set noshowmode
 
 " This is needed for lightline to display properly
@@ -65,3 +74,4 @@ let g:go_fmt_command = "goimports"
 map <leader>gb :GoBuild<cr>
 map <leader>gt :GoTest<cr>
 map <leader>gr :GoRun<cr>
+
