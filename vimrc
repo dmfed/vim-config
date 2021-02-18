@@ -15,17 +15,16 @@ syntax enable
 " Start custom commands with a , (comma)
 " and set slightly longer timeout
 let mapleader = ","
-set timeoutlen=1500
+set timeoutlen=1200
 
 " Faster write and write'n'quite
 map <leader>w :w<cr>
+map <leader>q :q<cr>
 map <leader>wq :wq<cr>
+map <leader>rn :set invrelativenumber<cr>
 
 " Navigating tabs
 map <leader>tn :tabnew
-map <leader>ty :tabn<cr>
-map <leader>tr :tabp<cr>
-
 
 " Show customs commands as they are
 " entered
@@ -71,7 +70,11 @@ map <leader>nn :NERDTreeToggle<cr>
 " Go (vim-go) specific bindings follow
 "
 let g:go_fmt_command = "goimports"
+let g:go_fmt_fail_silently = 1
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_fields = 1
 map <leader>gb :GoBuild<cr>
 map <leader>gt :GoTest<cr>
-map <leader>gr :GoRun<cr>
+map <leader>gr :GoRun %<cr>
 
