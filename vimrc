@@ -12,13 +12,17 @@ syntax enable
 " If we'd like to set a theme
 " set background=dark OR set background=light
 " colorscheme solarized
+colorscheme default
 
 " Start custom commands with a , (comma)
 " and set slightly longer timeout
-let mapleader = ","
+" let mapleader = ","
+noremap <SPACE> <Nop>
+let mapleader = " "
 set timeoutlen=1200
+inoremap jk <Esc>
 
-" Faster write and write'n'quite
+" Faster write and write'n'quit
 map <leader>w :w<cr>
 map <leader>q :q<cr>
 map <leader>wq :wq<cr>
