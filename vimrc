@@ -4,19 +4,17 @@ set relativenumber
 set autowrite
 set mouse=a
 
-" Let's tell between filetypes 
-" and indent properly
+" Let's indent properly
 filetype plugin indent on
 syntax enable
 
-" If we'd like to set a theme
 " set background=dark OR set background=light
+" when using a theme
 " colorscheme solarized
 colorscheme default
 
-" Start custom commands with a , (comma)
+" Map leader to Space and 'jk' to Esc
 " and set slightly longer timeout
-" let mapleader = ","
 noremap <SPACE> <Nop>
 let mapleader = " "
 set timeoutlen=1200
@@ -83,4 +81,3 @@ let g:go_highlight_fields = 1
 map <leader>gb :GoBuild<cr>
 map <leader>gt :GoTest<cr>
 map <leader>gr :GoRun %<cr>
-" autocmd CompleteDone * pclose
