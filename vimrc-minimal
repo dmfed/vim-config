@@ -1,0 +1,58 @@
+" Most general options
+
+set autowrite
+set mouse=a
+" Show line numbers
+set number
+
+" Show line numbers relative to current position
+set relativenumber
+
+" Highlight search
+set hlsearch
+
+" Show customs commands (starting with <leader>)
+" as they are entered
+set showcmd
+
+" Don't show current mode 
+" (since we're using lightline plugin)
+set noshowmode
+
+" This is needed for lightline to display properly
+" in my setup 
+set laststatus=2
+
+" Let's tell between filetypes 
+" and indent properly
+filetype plugin indent on
+syntax enable
+
+" If we'd like to set a theme
+" set background=dark OR set background=light
+" colorscheme solarized
+" colorscheme default
+colorscheme desert
+
+" Start custom commands with a , (comma)
+" and set slightly longer timeout
+noremap <SPACE> <Nop>
+let mapleader = " "
+set timeoutlen=1200
+inoremap jk <Esc>
+
+" Faster write and write'n'quit
+map <leader>w :w<cr>
+map <leader>q :q<cr>
+map <leader>wq :wq<cr>
+
+" Toggle relative numbers on/off 
+map <leader>rn :set invrelativenumber<cr>
+
+" Navigating tabs
+map <leader>tn :tabnew
+map <leader>h <C-W>h
+map <leader>j <C-W>j
+map <leader>k <C-W>k
+map <leader>l <C-W>l
+
