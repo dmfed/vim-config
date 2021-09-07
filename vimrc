@@ -34,7 +34,7 @@ syntax enable
 " colorscheme default
 colorscheme desert
 
-" Start custom commands with a , (comma)
+" Start custom commands with a Space
 " and set slightly longer timeout
 noremap <SPACE> <Nop>
 let mapleader = " "
