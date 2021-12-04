@@ -34,7 +34,7 @@ syntax enable
 " colorscheme default
 colorscheme desert
 
-" Start custom commands with a Space
+" Start custom commands with a , (comma)
 " and set slightly longer timeout
 noremap <SPACE> <Nop>
 let mapleader = " "
@@ -51,6 +51,17 @@ map <leader>rn :set invrelativenumber<cr>
 
 " Navigating tabs
 map <leader>tn :tabnew
+map <leader>tt :tabnext<cr>
+map <leader>1 1gt
+map <leader>2 2gt
+map <leader>3 3gt
+map <leader>4 4gt
+map <leader>5 5gt
+map <leader>6 6gt
+map <leader>7 7gt
+map <leader>8 8gt
+map <leader>9 9gt
+map <leader>0 10gt
 map <leader>h <C-W>h
 map <leader>j <C-W>j
 map <leader>k <C-W>k
